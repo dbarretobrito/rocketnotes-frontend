@@ -1,6 +1,5 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-
 
 export const Container = styled.div`
   width: 100%;
@@ -9,13 +8,13 @@ export const Container = styled.div`
   display: grid;
   grid-template-rows: 105px auto;
   grid-template-areas:
-  "header"
-  "content";
+    'header'
+    'content';
 
   > main {
     grid-area: content;
     overflow-y: auto;
-}
+  }
 
   .tags {
     display: flex;
@@ -35,9 +34,9 @@ export const Form = styled.form`
 
     margin-bottom: 36px;
 
-    a{
+    button {
       font-size: 20px;
-      color: ${({theme}) => theme.COLORS.GRAY_100};
+      color: ${({ theme }) => theme.COLORS.GRAY_100};
     }
   }
 `;
